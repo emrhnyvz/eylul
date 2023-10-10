@@ -4,36 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Form</title>
-    <link rel="stylesheet" href="https://codepen.io/gymratpacks/pen/VKzBEp#0">
-    <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
-
-    <style>
-        *, *:before, *:after {
-            -moz-box-sizing: border-box;
-            -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Nunito', sans-serif;
-            color: #384047;
-        }
-
-        form {
-            max-width: 300px;
-            margin: 10px auto;
-            padding: 10px 20px;
-            background: #f4f7f8;
-            border-radius: 8px;
-        }
-
-        h1 {
-            margin: 0 0 30px 0;
-            text-align: center;
-        }
-
-        /* ... Diğer stil bilgileriniz ... */
-    </style>
+    <!-- ... Stil ve diğer başlık bilgileri ... -->
 </head>
 
 <body>
@@ -41,31 +12,29 @@
         <div class="col-md-12">
             <form id="signupForm" action="index.html" method="post">
                 <h1> Sign Up </h1>
+
                 <fieldset>
                     <legend><span class="number">1</span> Your Basic Info</legend>
-                    <label for="name">İsim:</label>
-                    <input type="text" id="name" name="user_name">
-                    <label for="email">soyisim:</label>
-                    <input type="text" id="mail" name="user_email">
-                    <label for="password">telefon:</label>
-                    <input type="text" id="password" name="user_password">
-                    <label for="password1">boy:</label>
-                    <input type="text" id="boy" name="boy">
-                    <label for="password1">kilo:</label>
-                    <input type="text" id="kilo" name="kilo">
+                    <!-- ... Diğer form elemanları ... -->
                 </fieldset>
+
                 <fieldset>
                     <legend><span class="number">2</span> Your Profile</legend>
-                    <label for="bio">en çok neler yapamayı seviyorsun (uyumak hariç!!!):</label>
-                    <textarea id="bio" name="user_bio"></textarea>
+                    <!-- ... Diğer form elemanları ... -->
                 </fieldset>
-                <button type="submit">gönder</button>
+                
+                <button type="submit">yüzdelik hesapla</button>
             </form>
             <p id="mesaj"></p>
         </div>
     </div>
 
     <script>
-        document.getElementById('signupForm').addEventListener('submit', function (e) {
+        document.getElementById('signupForm').addEventListener('submit', function(e) {
             e.preventDefault();
-            document.getElementById('mesaj').textContent = 'Tam bana göresin, benimle çı
+            document.getElementById('mesaj').textContent = 'Tam bana göresin, benimle çıkar mısın?';
+        });
+    </script>
+</body>
+
+</html>
