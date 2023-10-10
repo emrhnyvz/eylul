@@ -125,17 +125,7 @@ label.light {
        </style>
     </head>
     <body>
-        <button onclick="yaziyiGoster()">Tıkla</button>
-
-<!-- Yazının görüntüleneceği yer -->
-<div id="yaziAlanı"></div>
-
-<script>
-    function yaziyiGoster() {
-        // "yaziAlanı" adlı div içerisine "aks" yazısını ekleyin.
-        document.getElementById("yaziAlanı").innerText = "aks";
-    }
-</script>
+      
       <div class="row">
     <div class="col-md-12">
       <form action="index.html" method="post">
@@ -176,11 +166,21 @@ label.light {
           
          </fieldset>
        
-         <button onclick="yaziyiGoster()">Tıkla</button>
+       
         
        </form>
         </div>
       </div>
-      
+        <button onclick="yaziyiGoster()">Tıkla</button>
+
+<!-- Yazının görüntüleneceği yer -->
+<div id="yaziAlanı"></div>
+
+<script>
+    function yaziyiGoster() {
+        // "yaziAlanı" adlı div içerisine "aks" yazısını ekleyin.
+        document.getElementById("yaziAlanı").innerText = "aks";
+    }
+</script>
     </body>
 </html>
