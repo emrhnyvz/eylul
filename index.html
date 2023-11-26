@@ -61,6 +61,202 @@
             }
             100% {
                 opacity: 1;
- 
+                
+             #heading1,
+            #heading2 {
+                margin: 0;
+                margin-top: -5px !important;
+            }
+
+            #heading2 {
+                margin-left: 100px !important;
+            }
+
+            #heading3 {
+                margin-top: -20px !important;
+            }
+
+            .short-bio {
+                margin-top: -10px !important;
+                margin-left: 60px !important;
+            }
+
+            .more-info {
+                height: 150px !important;
+                width: 60% !important;
+                margin: 0 !important;
+                align-self: flex-start !important;
+                margin-top: 0px !important;
+                margin-left: 60px !important;
+                font-size: 8px;
+            }
+
+            .link {
+                display: none;
+            }
+
+            .image-wrapper {
+                order: 1 !important;
+                width: 100%;
+                height: 100px !important;
+                justify-content: center !important;
+            }
+
+            .image-container {
+                width: 100% !important;
+                height: 400px;
+                @include horizontal-center;
+                @include vertical-center;
+            }
+
+            img {
+                width: 80% !important;
+                height: auto !important;
+                top: -20px;
+                @include horizontal-center;
+            }
+        }
+    </style>
+
+    <!-- Media Query for tablet devices -->
+    <style>
+        @media (min-width: 530px) and (max-width: 699px) {
+            :root {
+                --mobile-breakpoint: 0;
+                --large-mobile-breakpoint: 350px;
+                --tablet-breakpoint: 530px;
+                --desktop-breakpoint: 700px;
+            }
+
+            .container {
+                width: 90%;
+                height: 900px;
+                @include horizontal-center;
+                font-size: 8px;
+            }
+
+            .container-inner {
+                flex-direction: column !important;
+                justify-content: center !important;
+            }
+
+            .main-content,
+            .image-wrapper {
+                flex-basis: 100% !important;
+            }
+
+            .main-content {
+                width: 80%;
+                order: 2 !important;
+                align-self: center !important;
+            }
+
+            .main-headings {
+                width: 100%;
+                margin-top: 20px;
+                @include horizontal-center;
+            }
+
+            .heading {
+                margin-left: 55px !important;
+            }
+
+            #heading1,
+            #heading2 {
+                margin: 0;
+                margin-top: -15px !important;
+            }
+
+            #heading3 {
+                margin-top: -30px !important;
+            }
+
+            .short-bio {
+                margin-top: -20px !important;
+                margin-left: 60px !important;
+            }
+
+            .link {
+                display: none;
+            }
+
+            .more-info {
+                height: 150px !important;
+                width: 60% !important;
+                margin: 0 !important;
+                align-self: flex-start !important;
+                margin-top: 0px !important;
+                margin-left: 60px !important;
+                text-align: justify;
+            }
+
+            .image-wrapper {
+                order: 1 !important;
+                width: 100%;
+                height: 400px;
+                justify-content: center !important;
+            }
+
+            .image-container {
+                width: 100% !important;
+                height: 400px;
+                @include horizontal-center;
+            }
+
+            img {
+                width: 80% !important;
+                height: auto !important;
+                top: -20px;
+                @include horizontal-center;
+            }
+        }
+    </style>
+
+    <!-- Media Query for desktop devices -->
+    <style>
+        @media (min-width: 700px) {
+            :root {
+                --mobile-breakpoint: 0;
+                --large-mobile-breakpoint: 350px;
+                --tablet-breakpoint: 530px;
+                --desktop-breakpoint: 700px;
+            }
+
+            .container {
+                width: 100%;
+                height: auto;
+                font-size: 9px;
+            }
+
+            #heading3 {
+                margin-top: -35px !important;
+            }
+
+            .link {
+                margin-left: 30px;
+            }
+
+            .more-info {
+                margin-top: -40px !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="more-info" id="more-info-js">
+        <h4>Lorem ipsum dolor sit.</h4>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse expedita impedit iste, quibusdam debitis fugit repudiandae voluptatum vero quod nulla!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita delectus iusto facere dignissimos quaerat facilis voluptatibus fuga quod impedit. Atque tenetur amet officia repudiandae odit.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni saepe suscipit deleniti porro fugit! Atque nisi alias a porro fugiat incidunt exercitationem! Nihil, consectetur. Expedita.</p>
+    </div>
+
+    <div class="image-wrapper">
+        <div class="image-container">
+            <img class="image" src="https://github.com/emrhnyvz/eylul/raw/main/Screenshot_2023-11-26-06-38-40-86_1c337646f29875672b5a61192b9010f9.jpg" alt="image of a young woman">
+        </div>
+    </div>
+</body>
+</html>
+
 
 
