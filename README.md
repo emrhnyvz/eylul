@@ -26,7 +26,7 @@
 </head>
 <body>
 
-    <h1>PRİVE AL BENİ 💗</h1>
+    <h1>al yoksa iyi şeyler olmaz 💗</h1>
 
 </body>
 </html>
