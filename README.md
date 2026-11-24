@@ -26,7 +26,7 @@
 </head>
 <body>
 
-    <h1>al yoksa iyi şeyler olmaz 💗</h1>
+    <h1>alırmısın lütfen 💗</h1>
 
 </body>
 </html>
